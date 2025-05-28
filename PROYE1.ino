@@ -5,11 +5,20 @@ Servo myservo2;
 Servo myservo3;
 Servo myservo4;
 
-int Joy1x=A0;
-int Joy1y=A1; 
-int Joy2x=A5;
-int Joy2y=A4;
+const int Joy1x=A0;
+const int Joy1y=A1; 
+const int Joy2x=A5;
+const int Joy2y=A4;
 
+const int BTNA=A2;
+const int BTNR=A3;
+
+const int SWICH= 3;
+const int LEDMANUAL= 7;
+const int LEDAUTO=8;
+
+const int NPOSICIONES = 5;
+int autom[5][4]
 void setup() {
   
   myservo1.attach(11);
