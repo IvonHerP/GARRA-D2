@@ -23,11 +23,11 @@ const int LEDAUTO= 8;
 
 const int NPOSICIONES = 5; 
 int autom[5][4] = {
-  {0, 0, 0, 0},   
-  {30, 60, 120, 150}, 
-  {60, 90, 90, 60},  
-  {90, 120, 60, 30}, 
-  {120, 180, 0, 0}   
+  {120, 0, 0, 90},   
+  {0, 180, 95, 95}, 
+  {0, 180, 95, 95},  
+  {90, 120, 0, 30}, 
+  {0, 180, 95, 95}  
 };
 int posactual = 0; 
 
@@ -64,9 +64,9 @@ void setup() {
   pinMode(LEDMANUAL, OUTPUT);
   pinMode(LEDAUTO, OUTPUT);
 
-  myservo1.write(90);
-  myservo2.write(90);
-  myservo3.write(90);
+  myservo1.write(180);
+  myservo2.write(180);
+  myservo3.write(180);
   myservo4.write(90);
 }
 
